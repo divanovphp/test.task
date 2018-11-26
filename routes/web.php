@@ -12,5 +12,5 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return response()->json('Hello from shopify-test-task api :)');
 });
