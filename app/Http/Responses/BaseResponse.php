@@ -18,5 +18,9 @@ abstract class BaseResponse implements Responsable
         return response()->json($data, $this->status);
     }
 
+    /**
+     * Abstract protected function to prepare data before response
+     */
+
     abstract protected function prepare();
 }

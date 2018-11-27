@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+@import '~bootstrap/scss/bootstrap';
+
+@import '~react-toastify/dist/ReactToastify.css';
+
+
+
+.event-form {
+    width: 800px;
+    border: 1px solid black;
+    padding: 50px 50px 10px 50px;
+
+
+    .item {
+        margin-top: 30px;
+    }
+}
+
+.thank-you {
+    width: 800px;
+    height: 800px;
+    text-align: center;
+    background-color: lightgrey;
+    line-height: 800px;
+}

@@ -14,9 +14,5 @@ use Illuminate\Foundation\Inspiring;
 */
 
 Artisan::command('test', function () {
-    $config = config('shopify.credentials');
-    $client = PHPShopify\ShopifySDK::config($config);
-    $customers = $client->Customer->search('first_name:Deshaun Stiedemann');
-    dd($customers);
 
 })->describe('Display an inspiring quote');

@@ -1,0 +1,32 @@
+
+.selection-row {
+    border-bottom: 2px solid grey;
+    padding: 20px 0;
+    .close-wrapper {
+        text-align: right;
+        button {
+            cursor: pointer;
+            padding-right: 10px;
+            font-size: 22px;
+            border: none;
+            background: none;
+            &:hover:not(.disabled) {
+                color: #545556;
+            }
+            &:active {
+                color: black;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button.disabled {
+            opacity: .50;
+            cursor: not-allowed;
+        }
+    }
+
+}
+
+

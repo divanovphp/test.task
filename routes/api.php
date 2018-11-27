@@ -14,4 +14,6 @@ use Illuminate\Http\Request;
 */
 
 
-Route::get('customers', 'CustomersController@search');
+Route::get('customers', 'ShopifyCustomersController@search');
+
+Route::post('visitors', 'VisitorsController@store');

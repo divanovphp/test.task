@@ -7,8 +7,15 @@ use Illuminate\Http\Request;
 use App\Services\ShopifyService;
 use App\Http\Responses\CustomersResponse;
 
-class CustomersController extends Controller
+class ShopifyCustomersController extends Controller
 {
+    /**
+     * Get customers from shopify
+     *
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Services\ShopifyService $shopifyService
+     * @return \Illuminate\Contracts\Support\Responsable
+     */
     public function search(Request $request, ShopifyService $shopifyService)
     {
         $search = $request->query('search');
